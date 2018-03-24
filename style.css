@@ -1,0 +1,49 @@
+body{
+    background-color: white;
+}
+h1{
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+table{
+    margin: 60px auto 60px auto;
+    border: 10px double black;
+    width:  400px;
+    height: 400px;
+    background-color: #f2f2f2;
+    }
+
+input{
+        cursor: pointer;
+        width: 100px;
+        height: 60px;
+            }
+
+#screen{
+    cursor: default;
+    width: 408px;
+    font-size: 40px;
+}    
+
+.gr>input{
+    background-color: #d2d2d2;
+    }
+.gr>:hover{
+    border: 1px solid black;
+}
+
+.wt>input{
+    background-color: #f2f2f2;
+}
+
+.wt>:hover{
+    border: 1px solid black;
+}
+
+.bl>input{
+    background-color: #498af4;
+    }
+.bl>:hover{
+    border: 1px solid black;
+}

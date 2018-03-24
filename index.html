@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <link rel="icon" href="icon.png">
+
+</head>
+
+<body>
+    
+    <div>
+
+    <h1>Calculator</h1>
+
+    <table class="main">
+
+        <tr> <!--1st Row-->
+        
+            <td colspan="4" class=""><input type="text" name="" id="screen" value="" onmouseover=""/></td>
+            
+        </tr>
+
+        <tr> <!--2nd Row-->
+
+            <td class="gr"><input type="button" name="Bracket Open" id="bo" value="(" onclick="bracketO()" onmouseover=""/></td>
+            <td class="gr"><input type="button" name="Bracket Close" id="bc" value=")" onclick="bracketC()" onmouseover=""/></td>
+            <td class="gr"><input type="button" name="Modulus" id="modulus" value="%" onclick="modulus()" onmouseover=""/></td>
+            <td class="gr"><input type="button" name="Clear Screen" id="cls" value="CE" onclick="cls()" onmouseover=""/></td>
+
+        </tr>
+
+        <tr> <!--3rd Row-->
+
+            <td class="wt"><input type="button" name="Seven" id="seven" value="7" onclick="seven()" onmouseover=""/></td>
+            <td class="wt"><input type="button" name="Eight" id="eight" value="8" onclick="eight()" onmouseover=""/></td>
+            <td class="wt"><input type="button" name="Nine" id="nine" value="9" onclick="nine()" onmouseover=""/></td>
+            <td class="gr"><input type="button" name="Divide" id="divide" value="/" onclick="divide()" onmouseover=""/></td>
+
+        </tr>
+
+        <tr> <!--4th Row-->
+
+            <td class="wt"><input type="button" name="Four" id="four" value="4" onclick="four()" onmouseover=""/></td>
+            <td class="wt"><input type="button" name="Five" id="five" value="5" onclick="five()" onmouseover=""/></td>
+            <td class="wt"><input type="button" name="Six" id="six" value="6" onclick="six()" onmouseover=""/></td>
+            <td class="gr"><input type="button" name="Multiply" id="multiply" value="*" onclick="multiply()" onmouseover=""/></td>
+
+        </tr>
+
+        <tr> <!--5th Row-->
+
+            <td class="wt"><input type="button" name="One" id="one" value="1" onclick="one()" onmouseover=""/></td>
+            <td class="wt"><input type="button" name="Two" id="two" value="2" onclick="two()" onmouseover=""/></td>
+            <td class="wt"><input type="button" name="Three" id="three" value="3" onclick="three()" onmouseover=""/></td>
+            <td class="gr"><input type="button" name="Minus" id="minus" value="-" onclick="minus()" onmouseover=""/></td>
+
+        </tr>
+
+        <tr> <!--6th Row-->
+
+                <td class="wt"><input type="button" name="Zero" id="zero" value="0" onclick="zero()" onmouseover=""/></td>
+                <td class="wt"><input type="button" name="Dot" id="dot" value="." onclick="dot()" onmouseover=""/></td>
+                <td class="bl"><input type="button" name="Equal To" id="equal" value="=" onclick="calculate()" onblur="reset()"/></td>
+                <td class="gr"><input type="button" name="Plus" id="plus" value="+" onclick="plus()" onmouseover=""/></td>
+
+        </tr>
+
+
+    </table>
+
+    </div>
+
+    <script src="script.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBq5DS5zIf4ZyqCuVoiMTUZ1rl_ZCZjfeg",
+    authDomain: "calculator-using-js.firebaseapp.com",
+    databaseURL: "https://calculator-using-js.firebaseio.com",
+    projectId: "calculator-using-js",
+    storageBucket: "calculator-using-js.appspot.com",
+    messagingSenderId: "496957307816"
+  };
+  firebase.initializeApp(config);
+</script>
+
+</body>
+
+</html>
